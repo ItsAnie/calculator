@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta information about the page -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
 
+    <!-- Link to the external CSS file -->
     <link rel="stylesheet" type="text/css" href="style.css">    
 </head>
 
 <body>
+   <!-- Calculator container -->
    <div id="calculator">
-    <div id="result">0</div>
+        <!-- Display result of the calculations -->
+        <div id="result">0</div>
+
+        <!-- Row of calculator buttons -->
         <div class="row">
             <button class="num">7</button>
             <button class="num">8</button>
             <button class="num">9</button>
-            <button class="action">+</button>
+            <button class="action">+</button> <!-- Addition operator -->
         </div>
 
         <div class="row">
             <button class="num">4</button>
             <button class="num">5</button>
             <button class="num">6</button>
-            <button class="action">-</button>
+            <button class="action">-</button> <!-- Subtraction operator -->
         </div>
 
         <div class="row">
             <button class="num">1</button>
             <button class="num">2</button>
             <button class="num">3</button>
-            <button class="action">x</button>
+            <button class="action">x</button> <!-- Multiplication operator -->
         </div>
 
         <div class="row">
             <button class="num">0</button>
-            <button class="num_decimal">.</button>
-            <button id="equal">=</button>
-            <button class="action">/</button>
+            <button class="num_decimal">.</button> <!-- Decimal point button -->
+            <button id="equal">=</button> <!-- Equal button for calculating the result -->
+            <button class="action">/</button> <!-- Division operator -->
         </div>
 
+        <!-- Additional control buttons -->
         <div class="row">
-            <button class="minus">(-)</button>
-            <button class="clear">C</button>
-            <button class="back"> < </button>
-            <button class="bin"> Bin </button>
+            <button class="minus">(-)</button> <!-- Toggle negative sign -->
+            <button class="clear">C</button> <!-- Clear the input/result -->
+            <button class="back"> < </button> <!-- Backspace to delete the last character -->
+            <button class="bin"> Bin </button> <!-- Convert the number to binary -->
         </div>
    </div>
    
 
+    <!-- jQuery library for easier DOM manipulation -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Link to external JavaScript file for functionality -->
     <script src="calculator.js"></script>
 </body>
 </html>
